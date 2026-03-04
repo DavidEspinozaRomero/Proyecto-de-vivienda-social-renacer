@@ -8,7 +8,7 @@
   --color-dark: #1e1714;
 
   /* Tipografía */
-  --font-display: "Public Sans", sans-serif;
+  --font-display: "Public Sans", "Roboto", sans-serif;
 
   /* Border radius */
   --radius: 0.25rem;
