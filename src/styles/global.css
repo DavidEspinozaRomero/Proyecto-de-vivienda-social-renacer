@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colores */
+  --color-primary: #c87a56;
+  --color-secondary: #5a7a5c;
+  --color-light: #f8f7f6;
+  --color-dark: #1e1714;
+
+  /* Tipografía */
+  --font-display: "Public Sans", sans-serif;
+
+  /* Border radius */
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
+/* =========================
+   Base styles
+========================= */
+/* 
+@layer base {
+  body {
+    @apply bg-[var(--color-background-light)] text-zinc-900;
+  }
+
+  .dark body {
+    @apply bg-[var(--color-background-dark)] text-zinc-100;
+  }
+} */
