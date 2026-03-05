@@ -1,0 +1,257 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <!-- Top Navigation -->
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="py-12 lg:py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white mb-6 leading-tight"
+        >
+          Contacto – Proyecto de Vivienda Social <span class="text-primary"
+            >Renacer</span
+          > en Ambato
+        </h1>
+        <p
+          class="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto"
+        >
+          Estamos aquí para ayudarte. Si no tienes propiedad, solicita
+          información sobre terrenos disponibles en Ambato para empezar tu
+          hogar.
+        </p>
+      </div>
+    </section>
+    <!-- Main Contact Grid -->
+    <section class="max-w-7xl mx-auto px-4 pb-20">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <!-- Left Column: Form and Checklist -->
+        <div class="lg:col-span-7 space-y-12">
+          <!-- Form Card -->
+          <div
+            class="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-sm border border-beige-muted dark:border-slate-800"
+          >
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary"
+                >edit_note</span
+              >
+              Solicitar Información
+            </h2>
+            <form action="#" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >Nombre Completo</label
+                  >
+                  <input
+                    class="w-full rounded-lg border-beige-muted dark:border-slate-700 bg-background-light dark:bg-slate-800 p-3 focus:ring-primary focus:border-primary"
+                    placeholder="Ej. Juan Pérez"
+                    type="text"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >Teléfono / WhatsApp</label
+                  >
+                  <input
+                    class="w-full rounded-lg border-beige-muted dark:border-slate-700 bg-background-light dark:bg-slate-800 p-3 focus:ring-primary focus:border-primary"
+                    placeholder="098 765 4321"
+                    type="tel"
+                  />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                  >¿Posee alguna propiedad actualmente?</label
+                >
+                <select
+                  class="w-full rounded-lg border-beige-muted dark:border-slate-700 bg-background-light dark:bg-slate-800 p-3 focus:ring-primary focus:border-primary"
+                >
+                  <option value="no">No, no poseo propiedad</option>
+                  <option value="yes">Sí, ya tengo un terreno/casa</option>
+                </select>
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                  >Mensaje</label
+                >
+                <textarea
+                  class="w-full rounded-lg border-beige-muted dark:border-slate-700 bg-background-light dark:bg-slate-800 p-3 focus:ring-primary focus:border-primary"
+                  placeholder="Cuéntanos tus dudas o intereses..."
+                  rows="4"></textarea>
+              </div>
+              <button
+                class="w-full bg-primary hover:bg-terracotta text-white font-bold py-4 rounded-lg transition-all shadow-md flex justify-center items-center gap-2"
+                type="submit"
+              >
+                <span class="material-symbols-outlined">send</span>
+                Solicitar Información
+              </button>
+            </form>
+          </div>
+          <!-- Checklist -->
+          <div
+            class="bg-sage/10 dark:bg-sage/5 p-8 rounded-xl border border-sage/20"
+          >
+            <h3 class="text-xl font-bold text-slate-800 dark:text-white mb-4">
+              Antes de escribir, asegúrate de:
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-sage"
+                  >check_circle</span
+                >
+                <p class="text-slate-600 dark:text-slate-300">
+                  No tener ninguna propiedad registrada a tu nombre a nivel
+                  nacional.
+                </p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-sage"
+                  >check_circle</span
+                >
+                <p class="text-slate-600 dark:text-slate-300">
+                  Estar pagando arriendo actualmente y buscar tu vivienda
+                  propia.
+                </p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-sage"
+                  >check_circle</span
+                >
+                <p class="text-slate-600 dark:text-slate-300">
+                  Tener interés en formar parte de una organización social de
+                  vivienda.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right Column: Direct Contact & Map -->
+        <div class="lg:col-span-5 space-y-8">
+          <!-- WhatsApp Priority -->
+          <div class="bg-primary p-1 rounded-xl shadow-lg">
+            <a
+              class="flex flex-col items-center justify-center p-8 bg-white dark:bg-slate-900 rounded-lg hover:bg-background-light dark:hover:bg-slate-800 transition-colors text-center group"
+              href="https://wa.me/593?text=Hola,%20quiero%20información%20sobre%20el%20proyecto%20Renacer"
+            >
+              <div
+                class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+              >
+                <svg
+                  class="w-10 h-10"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3
+                class="text-2xl font-black text-slate-900 dark:text-white mb-2"
+              >
+                Escribir por WhatsApp
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                Respuesta inmediata de nuestros asesores
+              </p>
+            </a>
+          </div>
+          <!-- Address & Hours -->
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="bg-primary/10 p-3 rounded-lg h-fit">
+                <span class="material-symbols-outlined text-primary"
+                  >location_on</span
+                >
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white">
+                  Dirección Física
+                </h4>
+                <p class="text-slate-600 dark:text-slate-400">
+                  Sector Chaupi San Luis, Ambato, Ecuador.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="bg-primary/10 p-3 rounded-lg h-fit">
+                <span class="material-symbols-outlined text-primary"
+                  >schedule</span
+                >
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white">
+                  Horarios de Atención
+                </h4>
+                <p class="text-slate-600 dark:text-slate-400">
+                  Lunes a Viernes: 09:00 - 18:00
+                </p>
+                <p class="text-slate-600 dark:text-slate-400">
+                  Sábados: 09:00 - 13:00
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Map Placeholder -->
+          <div
+            class="aspect-video w-full rounded-xl overflow-hidden border border-beige-muted dark:border-slate-800 shadow-inner bg-slate-200 dark:bg-slate-800 relative group"
+          >
+            <img
+              class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform"
+              data-alt="Mapa de la ciudad de Ambato sector Chaupi San Luis"
+              data-location="Ambato"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm2Kz29c1jT270QB6JGlL9GPEsrQtMUD_5zaRmuNK0MPb2IU5y5r7CsC1QDc7mv6k483zw24P3QSOi9xOfvQi5PKKGjipoiZnC-VmCOyvTBoz5oEKyOQh44Cih1HcPElpCIbutfOz12yljbH5LNzhnFLKPQ5-9MJSXoAR-i5r2M4wU0Tj433PYqYAodTVXMomA9mXIhnD3rPiL13Qq5_wI6Zj1Zbr81m1aPX-QQw4sIyuEINoWqKth3WjVMalnEQJh9DJNVscwq2xR"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div
+                class="bg-white/90 dark:bg-slate-900/90 px-4 py-2 rounded-full shadow-lg border border-primary flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-primary"
+                  >pin_drop</span
+                >
+                <span class="text-sm font-bold">Ver en Google Maps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Final CTA Section -->
+    <section class="bg-primary text-white py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        <h2 class="text-3xl md:text-4xl font-black">
+          Tu primer terreno en Ambato puede empezar hoy
+        </h2>
+        <p class="text-white/80 text-lg">
+          Únete a cientos de familias que ya están construyendo su futuro con el
+          Proyecto Renacer.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            class="bg-white text-primary hover:bg-background-light px-8 py-4 rounded-xl font-black text-lg shadow-xl transition-all"
+          >
+            Agenda tu reunión
+          </button>
+          <button
+            class="border-2 border-white/40 hover:border-white px-8 py-4 rounded-xl font-bold text-lg transition-all"
+          >
+            Solicita los requisitos
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <Footer />
+</Layout>
