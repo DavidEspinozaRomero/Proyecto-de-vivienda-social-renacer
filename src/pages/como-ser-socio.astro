@@ -8,7 +8,7 @@ import Header from "../components/Header.astro";
   <div
     class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
   >
-  <Header></Header>
+    <Header />
     <div class="layout-container flex h-full grow flex-col">
       <main class="flex-1">
         <section class="relative">
@@ -39,16 +39,18 @@ import Header from "../components/Header.astro";
                 </p>
               </div>
               <div class="flex flex-wrap gap-4">
-                <button
+                <a
+                  href="/contacto"
                   class="flex items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold shadow-lg hover:translate-y-[-2px] transition-all"
                 >
                   Empieza hoy mismo
-                </button>
-                <button
+                </a>
+                <a
+                  href="/proyecto"
                   class="flex items-center justify-center rounded-lg h-14 px-8 bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-bold hover:bg-white/20 transition-all"
                 >
                   Saber más
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -287,7 +289,7 @@ import Header from "../components/Header.astro";
             </div>
           </div>
         </section>
-        <section class="py-20 px-6 lg:px-20 max-w-4xl mx-auto">
+        <section id="FAQs" class="py-20 px-6 lg:px-20 max-w-4xl mx-auto">
           <h2 class="text-3xl font-black text-center mb-12">
             Preguntas Frecuentes
           </h2>
@@ -374,21 +376,21 @@ import Header from "../components/Header.astro";
             >
               <a
                 class="bg-white text-primary px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-transform flex items-center justify-center gap-2"
-                href="#"
+                href="/contacto"
               >
                 <span class="material-symbols-outlined">calendar_today</span>
                 Agenda tu reunión
               </a>
               <a
                 class="bg-secondary text-white px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-transform flex items-center justify-center gap-2 border border-white/20"
-                href="#"
+                href="/requisitos"
               >
                 <span class="material-symbols-outlined">description</span>
                 Ver requisitos
               </a>
               <a
                 class="bg-[#25D366] text-white px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-transform flex items-center justify-center gap-2"
-                href="#"
+                href="https://wa.me/593999730617"
               >
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"
                   ><path
