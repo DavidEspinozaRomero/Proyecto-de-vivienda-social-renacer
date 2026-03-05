@@ -2,7 +2,7 @@
 interface Props {
   type: "primary" | "secondary" | "dark" | "light" | "whatsapp" | "facebook";
   link?: string;
-  rounded?: "plain" | "lg" | "full";
+  rounded?: "plain" | "lg" | "full" | "pill";
 }
 const { type = "primary", link, rounded = "lg" } = Astro.props;
 
@@ -19,6 +19,7 @@ const roundedClass = {
   plain: "rounded-xs",
   lg: "rounded-lg",
   full: "rounded-2xl",
+  pill: "rounded-4xl",
 }[rounded]
 ---
 

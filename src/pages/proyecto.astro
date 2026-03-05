@@ -2,12 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout>
+  <Header />
   <div class="relative flex min-h-screen flex-col overflow-x-hidden">
     <!-- Navigation -->
-    <Header />
     <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-12 md:px-10">
       <!-- Hero Section -->
       <section class="flex flex-col gap-6 mb-20 text-center md:text-left">
@@ -27,16 +28,12 @@ import Footer from "../components/Footer.astro";
           <div
             class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start"
           >
-            <button
-              class="bg-primary text-white px-8 py-3 rounded-lg font-bold shadow-lg hover:bg-primary/90 transition-all"
-            >
+            <Button type="primary" link="/contacto">
               Solicita información
-            </button>
-            <button
-              class="bg-secondary/10 text-secondary border border-secondary/20 px-8 py-3 rounded-lg font-bold hover:bg-secondary/20 transition-all"
-            >
+            </Button>
+            <Button type="light" link="/requisitos">
               Consulta los requisitos
-            </button>
+            </Button>
           </div>
         </div>
       </section>
@@ -174,12 +171,15 @@ import Footer from "../components/Footer.astro";
           <div
             class="absolute inset-0 bg-primary/20 flex items-center justify-center"
           >
-            <div
+            <!-- https://maps.app.goo.gl/mVJTdcjVuBdxXX6K7 -->
+            <a
+              href="https://maps.app.goo.gl/mVJTdcjVuBdxXX6K7"
+              target="_blank"
               class="bg-white/90 px-6 py-3 rounded-full flex items-center gap-2 shadow-lg"
             >
               <span class="material-symbols-outlined text-primary">map</span>
               <span class="font-bold text-slate-800">Ver en Google Maps</span>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -274,12 +274,10 @@ import Footer from "../components/Footer.astro";
             </div>
           </div>
           <div class="shrink-0">
-            <button
-              class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold shadow-2xl hover:bg-slate-100 transition-all flex items-center gap-2"
-            >
+            <Button type="light" rounded="pill" link="/contacto">
               <span class="material-symbols-outlined">calendar_month</span>
               Agenda una reunión
-            </button>
+            </Button>
           </div>
         </div>
       </section>
@@ -294,15 +292,13 @@ import Footer from "../components/Footer.astro";
         <p
           class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          Estamos buscando a los últimos 64 socios comprometidos para completar
-          esta gran familia. Tu primera vivienda te espera en Renacer.
+          Estamos buscando a 64 socios comprometidos para completar esta gran
+          familia. Tu primera vivienda te espera en Renacer.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
-          <button
-            class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all"
-          >
+          <Button type="light" link="/contacto">
             Solicita Información Hoy
-          </button>
+          </Button>
         </div>
       </section>
     </main>
