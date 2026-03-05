@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Button from "../components/Button.astro";
+import ButtonTransparent from "../components/ButtonTransparent.astro";
 ---
 
 <Layout>
@@ -28,7 +30,7 @@ import Header from "../components/Header.astro";
             class="text-4xl md:text-5xl font-extrabold text-white leading-tight drop-shadow-lg"
           >
             Requisitos para acceder a un terreno en el Proyecto de Vivienda
-            Social Renacer – Ambato
+            Social Renacer - Ambato
           </h1>
           <p class="mt-6 text-white/90 text-lg font-medium max-w-2xl mx-auto">
             Tu primer paso hacia un hogar digno comienza aquí. Conoce los
@@ -69,8 +71,8 @@ import Header from "../components/Header.astro";
                   >check_circle</span
                 >
                 <p class="text-base leading-relaxed">
-                  Ser arrendatario en la actualidad o vivir en condición de
-                  hacinamiento demostrable.
+                  Ser arrendatario en la actualidad dentro del ámbito
+                  territorial del proyecto.
                 </p>
               </div>
               <div
@@ -172,8 +174,8 @@ import Header from "../components/Header.astro";
                     class="flex-none w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full font-bold"
                     >05</span
                   >
-                  <span class="text-lg"
-                    >Récord Policial actualizado sin antecedentes graves.</span
+                  <span class="text-lg">
+                    Certificado de Antecedentes Penales (actualizado).</span
                   >
                 </li>
               </ol>
@@ -209,7 +211,7 @@ import Header from "../components/Header.astro";
                   >verified_user</span
                 >
                 <span class="text-slate-300"
-                  >Récord judicial de su país de origen debidamente apostillado.</span
+                  >Pasado judicial apostillado del país de origen.</span
                 >
               </li>
             </ul>
@@ -228,10 +230,9 @@ import Header from "../components/Header.astro";
             </div>
             <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
               Este es el documento primordial para validar su postulación. Debe
-              solicitar el <strong
-                >Certificado de No Poseer Bienes Raíces</strong
-              > en el Registro de la Propiedad del cantón donde reside actualmente
-              y en el Registro de la Propiedad de Ambato.
+              solicitar el <strong>
+                Certificado de Bienes Raíces (Registro de la Propiedad)
+              </strong> Que indique NO poseer bienes inmuebles en la jurisdicción.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="p-4 bg-background-light dark:bg-slate-800 rounded-lg">
@@ -240,7 +241,7 @@ import Header from "../components/Header.astro";
                 </h4>
                 <p class="text-sm">
                   Debe demostrar su condición de arrendatario mediante contrato
-                  o declaración juramentada.
+                  o documento juramentado.
                 </p>
               </div>
               <div class="p-4 bg-background-light dark:bg-slate-800 rounded-lg">
@@ -330,30 +331,33 @@ import Header from "../components/Header.astro";
               proceso.
             </p>
             <div class="space-y-3">
-              <button
+              <!-- <button
                 class="w-full bg-white text-primary font-bold py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-slate-50 transition-colors"
               >
                 <span class="material-symbols-outlined text-sm"
                   >calendar_month</span
                 >
                 Agenda una reunión
-              </button>
-              <button
+              </button> -->
+              <a
+                href="/contacto#FAQs"
                 class="w-full bg-white/10 text-white border border-white/20 font-bold py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-white/20 transition-colors"
               >
                 <span class="material-symbols-outlined text-sm"
                   >support_agent</span
                 >
                 Solicita asesoramiento
-              </button>
-              <button
+              </a>
+
+              <a
+                href="/como-ser-socio#FAQs"
                 class="w-full bg-white/10 text-white border border-white/20 font-bold py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-white/20 transition-colors"
               >
                 <span class="material-symbols-outlined text-sm"
                   >help_outline</span
                 >
                 Consulta tus dudas
-              </button>
+              </a>
             </div>
           </div>
         </div>
