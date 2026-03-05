@@ -30,11 +30,13 @@ import Footer from "../components/Footer.astro";
             </p>
           </div>
           <div class="flex flex-wrap gap-4">
-            <Button type="primary">
+            <Button type="primary" link="/proyecto">
               Solicita información
               <span class="material-symbols-outlined">arrow_forward</span>
             </Button>
-            <Button type="light">Conoce los requisitos</Button>
+            <Button type="light" link="/requisitos"
+              >Conoce los requisitos</Button
+            >
           </div>
           <div class="flex items-center gap-4 pt-4 border-t border-primary/30">
             <div class="flex -space-x-3">
@@ -329,7 +331,8 @@ import Footer from "../components/Footer.astro";
             </li>
           </ul>
           <div class="w-full px-auto">
-            <Button type="dark" link="#">Ver requisitos para inscripción</Button
+            <Button type="dark" link="/requisitos"
+              >Ver requisitos para inscripción</Button
             >
           </div>
         </div>
@@ -398,11 +401,15 @@ import Footer from "../components/Footer.astro";
             arriendo para siempre. Agenda tu reunión informativa hoy mismo.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button type="primary" rounded="full" link="#" 
+            <Button type="primary" rounded="full" link="/contacto"
               ><span class="material-symbols-outlined">calendar_month</span>
               Agenda tu reunión</Button
             >
-            <Button type="whatsapp" rounded="full" link="#">
+            <Button
+              type="whatsapp"
+              rounded="full"
+              link="https://wa.me/593999730617"
+            >
               <span class="material-symbols-outlined">chat</span>
               Contáctanos por WhatsApp</Button
             >
@@ -411,6 +418,5 @@ import Footer from "../components/Footer.astro";
       </div>
     </section>
   </div>
-  <Footer/>
-  
+  <Footer />
 </Layout>
