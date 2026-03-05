@@ -1,0 +1,312 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+    <!-- Navigation -->
+    <Header />
+    <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-12 md:px-10">
+      <!-- Hero Section -->
+      <section class="flex flex-col gap-6 mb-20 text-center md:text-left">
+        <div class="max-w-3xl">
+          <h1
+            class="text-slate-900 dark:text-slate-100 text-4xl md:text-6xl font-black leading-tight tracking-tight mb-4"
+          >
+            El Proyecto de Vivienda Social Renacer en Ambato
+          </h1>
+          <p
+            class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed"
+          >
+            Un proyecto para propietarios de primera vivienda, impulsado por
+            familias que desean dejar de alquilar y construir un hogar propio en
+            comunidad.
+          </p>
+          <div
+            class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start"
+          >
+            <button
+              class="bg-primary text-white px-8 py-3 rounded-lg font-bold shadow-lg hover:bg-primary/90 transition-all"
+            >
+              Solicita información
+            </button>
+            <button
+              class="bg-secondary/10 text-secondary border border-secondary/20 px-8 py-3 rounded-lg font-bold hover:bg-secondary/20 transition-all"
+            >
+              Consulta los requisitos
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- History Timeline -->
+      <section class="mb-24">
+        <div class="flex items-center gap-2 mb-10">
+          <span class="material-symbols-outlined text-primary">history</span>
+          <h2 class="text-slate-900 dark:text-slate-100 text-3xl font-bold">
+            Nuestra Historia
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Year 1 -->
+          <div
+            class="relative pl-8 md:pl-0 md:pt-8 border-l-2 md:border-l-0 md:border-t-2 border-primary/20"
+          >
+            <div
+              class="absolute -left-[9px] top-0 md:-top-[9px] md:left-0 w-4 h-4 rounded-full bg-primary"
+            >
+            </div>
+            <span
+              class="text-primary font-bold text-sm uppercase tracking-wider"
+              >Año 1</span
+            >
+            <h3 class="font-bold text-lg mt-2 mb-1">Organización Legal</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Obtención de personería jurídica y apoyo institucional del MIDUVI.
+            </p>
+          </div>
+          <!-- Year 2 -->
+          <div
+            class="relative pl-8 md:pl-0 md:pt-8 border-l-2 md:border-l-0 md:border-t-2 border-primary/20"
+          >
+            <div
+              class="absolute -left-[9px] top-0 md:-top-[9px] md:left-0 w-4 h-4 rounded-full bg-primary"
+            >
+            </div>
+            <span
+              class="text-primary font-bold text-sm uppercase tracking-wider"
+              >Año 2</span
+            >
+            <h3 class="font-bold text-lg mt-2 mb-1">Hallazgo del Terreno</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Identificación y negociación del predio en Chaupi San Luis,
+              Ambato.
+            </p>
+          </div>
+          <!-- Year 3 -->
+          <div
+            class="relative pl-8 md:pl-0 md:pt-8 border-l-2 md:border-l-0 md:border-t-2 border-primary/20"
+          >
+            <div
+              class="absolute -left-[9px] top-0 md:-top-[9px] md:left-0 w-4 h-4 rounded-full bg-primary"
+            >
+            </div>
+            <span
+              class="text-primary font-bold text-sm uppercase tracking-wider"
+              >Año 3</span
+            >
+            <h3 class="font-bold text-lg mt-2 mb-1">Desafíos Técnicos</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Superación de retos municipales y planificación de infraestructura
+              básica.
+            </p>
+          </div>
+          <!-- Year 4 -->
+          <div
+            class="relative pl-8 md:pl-0 md:pt-8 border-l-2 md:border-l-0 md:border-t-2 border-primary/20"
+          >
+            <div
+              class="absolute -left-[9px] top-0 md:-top-[9px] md:left-0 w-4 h-4 rounded-full bg-primary"
+            >
+            </div>
+            <span
+              class="text-primary font-bold text-sm uppercase tracking-wider"
+              >Año 4</span
+            >
+            <h3 class="font-bold text-lg mt-2 mb-1">Consolidación</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Hacia la meta de 64 socios comprometidos con su futuro hogar.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Location Section -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 bg-white dark:bg-slate-800/50 p-8 rounded-2xl shadow-sm border border-primary/5"
+      >
+        <div class="flex flex-col gap-6">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-semibold w-fit"
+          >
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            Ubicación Estratégica
+          </div>
+          <h2 class="text-slate-900 dark:text-slate-100 text-3xl font-bold">
+            Sector Chaupi San Luis
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+            Ubicado en una zona con gran potencial de desarrollo urbano en
+            Ambato. El sector cuenta con excelentes vías de acceso y una
+            planificación que prioriza la calidad de vida y la conexión con el
+            entorno natural.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary"
+                >check_circle</span
+              >
+              <span>Vías de acceso pavimentadas y transporte cercano.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary"
+                >check_circle</span
+              >
+              <span>Potencial de plusvalía y crecimiento urbano ordenado.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary"
+                >check_circle</span
+              >
+              <span>Entorno tranquilo ideal para familias.</span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="h-80 md:h-[450px] bg-slate-200 dark:bg-slate-700 rounded-xl overflow-hidden relative border-4 border-white dark:border-slate-800 shadow-xl group"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            data-alt="Mapa ilustrativo de la ubicación en Ambato Chaupi San Luis"
+            data-location="Ambato, Ecuador"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4i8lIIW7nwCuZRdzdVNRDeLizqNRw2-JHV2vHuMWu130E7OxhAjct52o_zpj635AJCMGYJ7y-dbkM0CVsuGc8guuNfbGg-yjgC_IZUsY6IKGuUTKUVHCdi60Dxkrhy0bvySbsqSaYorLv_QSYZcAyy55hzIlz3PV8LCwD6n-fVzqU9c9Wz1PhQQBjsO6G8vlHI-W7rxZuTR1Uk_VwirRWPsjHcsXZfgMSBV0-u4-dwLk1QBqs8c8lp6wsphpzwE8lsZqQJBJPTR_l"
+          />
+          <div
+            class="absolute inset-0 bg-primary/20 flex items-center justify-center"
+          >
+            <div
+              class="bg-white/90 px-6 py-3 rounded-full flex items-center gap-2 shadow-lg"
+            >
+              <span class="material-symbols-outlined text-primary">map</span>
+              <span class="font-bold text-slate-800">Ver en Google Maps</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Values and Community -->
+      <section class="mb-24">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">Valores Comunitarios</h2>
+          <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            Ser parte de Renacer no es solo comprar una casa, es construir una
+            comunidad desde los cimientos.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-secondary/5 p-8 rounded-xl border border-secondary/10 hover:shadow-md transition-shadow"
+          >
+            <span class="material-symbols-outlined text-secondary text-4xl mb-4"
+              >groups</span
+            >
+            <h3 class="text-xl font-bold mb-3">Asambleas</h3>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
+            >
+              Participación activa en la toma de decisiones. Cada voz cuenta en
+              el futuro de nuestro barrio.
+            </p>
+          </div>
+          <div
+            class="bg-primary/5 p-8 rounded-xl border border-primary/10 hover:shadow-md transition-shadow"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-4"
+              >handshake</span
+            >
+            <h3 class="text-xl font-bold mb-3">Compromiso</h3>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
+            >
+              Un contrato de confianza mutua para cumplir el sueño de la
+              vivienda propia para todos.
+            </p>
+          </div>
+          <div
+            class="bg-secondary/5 p-8 rounded-xl border border-secondary/10 hover:shadow-md transition-shadow"
+          >
+            <span class="material-symbols-outlined text-secondary text-4xl mb-4"
+              >diversity_3</span
+            >
+            <h3 class="text-xl font-bold mb-3">Mingas</h3>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
+            >
+              Trabajo conjunto para el mantenimiento y mejora de nuestras áreas
+              comunes.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Community Work (Mingas) -->
+      <section
+        class="relative overflow-hidden rounded-3xl bg-slate-900 text-white mb-24"
+      >
+        <img
+          class="absolute inset-0 w-full h-full object-cover opacity-30"
+          data-alt="Grupo de personas trabajando juntas en una minga comunitaria"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGhBgcehEG9wqbeeT7Qmk6xsOfpHZgq5ZbIEpygMvhMeu7_xzxGjDiD0R3xPmrRYYS9XwM59YRUcsfHAbJ5U6JRwrAkJ3K1rQek8ARr86mSL6SUQcmJ1iutTNx1Ig3R-8RWbCG95vbE41wXebHvXlIo_o4uR8J_kVLpzBRARMMR_o3d-EsKY_pvkAm8eruYUm8MVUrCwPUkSwtgmsPKGCKDrlHKez2fnEKl-LPMtR9aypV2WhZfycuX6McJHumXF9xDY4twV0n-Mm7"
+        />
+        <div
+          class="relative z-10 px-8 py-16 md:p-16 flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1">
+            <h2 class="text-4xl font-bold mb-6">
+              El Corazón del Proyecto: Las Mingas
+            </h2>
+            <p class="text-lg text-slate-200 mb-8 leading-relaxed">
+              Nuestro compromiso se demuestra con acciones. A través de las
+              mingas, hemos logrado la limpieza del terreno, la siembra de
+              árboles y la organización de nuestras futuras áreas verdes.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                class="flex items-center gap-3 bg-white/10 backdrop-blur-md p-4 rounded-lg"
+              >
+                <span class="material-symbols-outlined">forest</span>
+                <span class="font-medium">Reforestación</span>
+              </div>
+              <div
+                class="flex items-center gap-3 bg-white/10 backdrop-blur-md p-4 rounded-lg"
+              >
+                <span class="material-symbols-outlined">cleaning_services</span>
+                <span class="font-medium">Mantenimiento</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <button
+              class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold shadow-2xl hover:bg-slate-100 transition-all flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined">calendar_month</span>
+              Agenda una reunión
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Final Goal -->
+      <section
+        class="text-center bg-primary text-white rounded-3xl p-12 md:p-20 shadow-2xl shadow-primary/20"
+      >
+        <span class="material-symbols-outlined text-6xl mb-6">flag</span>
+        <h2 class="text-4xl md:text-5xl font-black mb-6">
+          Nuestra Meta Final: 64 Socios
+        </h2>
+        <p
+          class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed"
+        >
+          Estamos buscando a los últimos 64 socios comprometidos para completar
+          esta gran familia. Tu primera vivienda te espera en Renacer.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button
+            class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all"
+          >
+            Solicita Información Hoy
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <Footer />
+  </div>
+</Layout>
