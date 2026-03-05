@@ -1,0 +1,407 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout>
+  <div
+    class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
+  >
+  <Header></Header>
+    <div class="layout-container flex h-full grow flex-col">
+      <main class="flex-1">
+        <section class="relative">
+          <div class="mx-auto max-w-[1280px] p-4 lg:p-10">
+            <div
+              class="flex min-h-[520px] flex-col gap-8 bg-cover bg-center bg-no-repeat rounded-xl items-start justify-center p-8 lg:p-16 relative overflow-hidden"
+              data-alt="Beautiful modern family home in a green landscape"
+              style='background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcjoR32JvnVfzr5qlC9R5ByG7TL-L8jgoBsNug_K9PpknToTwWKFqrKU7LaRpm3Rp8CGiXgFrA_T3aL8e2TAPSOM2zurgrBmBHS0yfvh9Cp_DaMP-61KcyyeNEE_tO2PPOlm3TF8jWrauyf4D7F33hxnVwqwgL1WoV1mZruhqIuhWqRKJgN7JqSgYxiy7oLkYggZMUUeF2HaNQQOLxr10Bixg6mAeVuOpB8CuWbS4aDTEp3CHyv0qgO3Zsa3BMwgjnw6gr0ZJTr99V");'
+            >
+              <div class="flex flex-col gap-4 max-w-2xl">
+                <span
+                  class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest w-fit"
+                >
+                  Vivienda Social Ambato
+                </span>
+                <h1
+                  class="text-white text-4xl lg:text-6xl font-black leading-tight tracking-tight"
+                >
+                  Cómo ser socio del Proyecto Renacer
+                </h1>
+                <p
+                  class="text-slate-200 text-lg lg:text-xl font-normal leading-relaxed"
+                >
+                  Da el primer paso hacia tu terreno propio. Únete a una
+                  comunidad comprometida donde el esfuerzo mutuo construye
+                  hogares dignos en un entorno seguro y solidario en el corazón
+                  de Ambato.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-4">
+                <button
+                  class="flex items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold shadow-lg hover:translate-y-[-2px] transition-all"
+                >
+                  Empieza hoy mismo
+                </button>
+                <button
+                  class="flex items-center justify-center rounded-lg h-14 px-8 bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-bold hover:bg-white/20 transition-all"
+                >
+                  Saber más
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-16 px-6 lg:px-20 max-w-[1280px] mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl lg:text-4xl font-black text-slate-900 dark:text-white mb-4"
+            >
+              Proceso de Ingreso en 4 Pasos
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Nuestro camino es transparente y participativo. Aquí te explicamos
+              cómo formar parte de nuestra asociación.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="relative group">
+              <div
+                class="mb-6 flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300"
+              >
+                <span class="material-symbols-outlined text-3xl">info</span>
+              </div>
+              <div
+                class="absolute top-8 left-16 right-0 h-0.5 bg-primary/20 hidden lg:block"
+              >
+              </div>
+              <span
+                class="text-primary font-bold text-5xl opacity-20 absolute -top-4 -right-2"
+                >01</span
+              >
+              <h3 class="text-xl font-bold mb-2">Solicitar información</h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                Primer contacto para conocer los beneficios, ubicación y visión
+                del proyecto.
+              </p>
+            </div>
+            <div class="relative group">
+              <div
+                class="mb-6 flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300"
+              >
+                <span class="material-symbols-outlined text-3xl"
+                  >folder_shared</span
+                >
+              </div>
+              <div
+                class="absolute top-8 left-16 right-0 h-0.5 bg-primary/20 hidden lg:block"
+              >
+              </div>
+              <span
+                class="text-primary font-bold text-5xl opacity-20 absolute -top-4 -right-2"
+                >02</span
+              >
+              <h3 class="text-xl font-bold mb-2">Entregar documentación</h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                Reunir requisitos legales básicos y formularios de inscripción
+                del aspirante.
+              </p>
+            </div>
+            <div class="relative group">
+              <div
+                class="mb-6 flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300"
+              >
+                <span class="material-symbols-outlined text-3xl">groups</span>
+              </div>
+              <div
+                class="absolute top-8 left-16 right-0 h-0.5 bg-primary/20 hidden lg:block"
+              >
+              </div>
+              <span
+                class="text-primary font-bold text-5xl opacity-20 absolute -top-4 -right-2"
+                >03</span
+              >
+              <h3 class="text-xl font-bold mb-2">Validación en asamblea</h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                Presentación ante los socios actuales para aprobación colectiva
+                y transparencia.
+              </p>
+            </div>
+            <div class="relative group">
+              <div
+                class="mb-6 flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300"
+              >
+                <span class="material-symbols-outlined text-3xl">handshake</span
+                >
+              </div>
+              <span
+                class="text-primary font-bold text-5xl opacity-20 absolute -top-4 -right-2"
+                >04</span
+              >
+              <h3 class="text-xl font-bold mb-2">Ingreso formal</h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                Firma de estatutos y bienvenida oficial como socio activo del
+                proyecto.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="bg-accent/20 dark:bg-primary/5 py-20">
+          <div class="px-6 lg:px-20 max-w-[1280px] mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+              <div class="flex-1 space-y-8">
+                <h2
+                  class="text-4xl font-black text-slate-900 dark:text-white leading-tight"
+                >
+                  ¿Qué significa ser socio?
+                </h2>
+                <p class="text-lg text-slate-700 dark:text-slate-300">
+                  Ser parte de RENACER es más que adquirir un terreno; es
+                  co-crear un barrio donde la solidaridad es la base de todo.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm border border-primary/10"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-3xl mb-4"
+                      >volunteer_activism</span
+                    >
+                    <h4 class="font-bold text-lg mb-2">Compromiso</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                      Dedicación al bienestar y avance del proyecto a largo
+                      plazo.
+                    </p>
+                  </div>
+                  <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm border border-primary/10"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-3xl mb-4"
+                      >forum</span
+                    >
+                    <h4 class="font-bold text-lg mb-2">Participación Activa</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                      Asistencia obligatoria a reuniones y toma de decisiones
+                      democráticas.
+                    </p>
+                  </div>
+                  <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm border border-primary/10"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-3xl mb-4"
+                      >construction</span
+                    >
+                    <h4 class="font-bold text-lg mb-2">Mingas</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                      Colaboración física directa en jornadas de mejora
+                      comunitaria.
+                    </p>
+                  </div>
+                  <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm border border-primary/10"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-3xl mb-4"
+                      >gavel</span
+                    >
+                    <h4 class="font-bold text-lg mb-2">Respeto Legal</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                      Cumplimiento estricto de los estatutos y normas internas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 relative">
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    alt="Community members working together in a garden"
+                    class="w-full h-[500px] object-cover"
+                    data-alt="Group of diverse people working together in community garden"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS-WMl6JZvRznX5UqwhGbO-UVbaOWPPLhrDLsENtU810x3W-G6qa0BIyWudNX2S_QHwuveQ_b137vDcJiSxezIE9anH2qbVmNNiA_4wYH-r1sh9xS6wA76eqm_Cg0Hnd88vr_kYgOqF6AUGIDe6p-tvHK_KOgkGFFs0yR-GWmRM3WTmX4PkPVzdaGSw5QNzLH8vIlOegHXG7UVtj8CZBYUkBpNGdZh80fGpexiZQsHq20mdjgoUXgRStZDlkxGY2lZTlMQKGL024EB"
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-6 -left-6 bg-secondary text-white p-8 rounded-xl shadow-xl max-w-xs"
+                >
+                  <p class="italic text-lg">
+                    "En Renacer no solo compramos tierra, sembramos futuro para
+                    nuestros hijos."
+                  </p>
+                  <p class="mt-4 font-bold">- Familia socio fundadora</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-background-light dark:bg-background-dark">
+          <div class="px-6 lg:px-20 max-w-[1280px] mx-auto text-center">
+            <div
+              class="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full font-bold text-sm mb-6 uppercase tracking-wider"
+            >
+              Sector Chaupi San Luis
+            </div>
+            <h2
+              class="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-8"
+            >
+              Nuestra meta: 64 socios comprometidos
+            </h2>
+            <div
+              class="max-w-4xl mx-auto bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-700"
+            >
+              <div class="flex justify-between items-end mb-4">
+                <div class="text-left">
+                  <p
+                    class="text-slate-500 dark:text-slate-400 text-sm font-bold uppercase"
+                  >
+                    Progreso actual
+                  </p>
+                  <p class="text-4xl font-black text-primary">
+                    48 <span class="text-xl font-normal text-slate-400"
+                      >/ 64</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p class="text-secondary font-bold text-lg">75% Completado</p>
+                </div>
+              </div>
+              <div
+                class="w-full bg-slate-100 dark:bg-slate-700 h-6 rounded-full overflow-hidden mb-6"
+              >
+                <div
+                  class="bg-primary h-full rounded-full transition-all duration-1000"
+                  style="width: 75%"
+                >
+                </div>
+              </div>
+              <p
+                class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed"
+              >
+                Estamos en la etapa final de selección. Buscamos a las últimas
+                familias que quieran ser parte de este sueño en el Sector Chaupi
+                San Luis, un área con gran potencial de desarrollo y seguridad.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 px-6 lg:px-20 max-w-4xl mx-auto">
+          <h2 class="text-3xl font-black text-center mb-12">
+            Preguntas Frecuentes
+          </h2>
+          <div class="space-y-4">
+            <div
+              class="border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden"
+            >
+              <button
+                class="w-full flex items-center justify-between p-6 bg-white dark:bg-slate-900 text-left hover:bg-slate-50 transition-colors"
+              >
+                <span class="font-bold">¿Necesito tener casa propia?</span>
+                <span class="material-symbols-outlined">expand_more</span>
+              </button>
+              <div
+                class="p-6 border-t border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-400"
+              >
+                No, el proyecto está enfocado precisamente en familias que aún
+                no tienen vivienda propia y buscan su primer terreno.
+              </div>
+            </div>
+            <div
+              class="border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden"
+            >
+              <button
+                class="w-full flex items-center justify-between p-6 bg-white dark:bg-slate-900 text-left hover:bg-slate-50 transition-colors"
+              >
+                <span class="font-bold"
+                  >¿Puedo postular si vivo arrendando?</span
+                >
+                <span class="material-symbols-outlined">expand_more</span>
+              </button>
+              <div
+                class="p-6 border-t border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-400"
+              >
+                ¡Sí! De hecho, la mayoría de nuestros socios actuales son
+                familias que viven en arriendo y buscan estabilidad para su
+                futuro.
+              </div>
+            </div>
+            <div
+              class="border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden"
+            >
+              <button
+                class="w-full flex items-center justify-between p-6 bg-white dark:bg-slate-900 text-left hover:bg-slate-50 transition-colors"
+              >
+                <span class="font-bold"
+                  >¿Es obligatorio participar en mingas?</span
+                >
+                <span class="material-symbols-outlined text-primary"
+                  >expand_more</span
+                >
+              </button>
+              <div
+                class="p-6 border-t border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-400"
+              >
+                Sí, las mingas son fundamentales. No solo ahorran costos en el
+                desarrollo del proyecto, sino que ayudan a crear lazos entre los
+                vecinos antes de mudarse.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-primary text-white py-20 px-6 lg:px-20 overflow-hidden relative"
+        >
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"
+          >
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-96 h-96 bg-black/5 rounded-full translate-y-1/2 -translate-x-1/2"
+          >
+          </div>
+          <div class="max-w-[1280px] mx-auto text-center relative z-10">
+            <h2 class="text-4xl lg:text-5xl font-black mb-8">
+              ¿Listo para construir tu futuro?
+            </h2>
+            <p class="text-xl mb-12 text-white/90 max-w-2xl mx-auto">
+              Nuestro equipo está listo para guiarte en cada paso. Agenda tu
+              cita o contáctanos directamente.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row flex-wrap justify-center gap-4"
+            >
+              <a
+                class="bg-white text-primary px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-transform flex items-center justify-center gap-2"
+                href="#"
+              >
+                <span class="material-symbols-outlined">calendar_today</span>
+                Agenda tu reunión
+              </a>
+              <a
+                class="bg-secondary text-white px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-transform flex items-center justify-center gap-2 border border-white/20"
+                href="#"
+              >
+                <span class="material-symbols-outlined">description</span>
+                Ver requisitos
+              </a>
+              <a
+                class="bg-[#25D366] text-white px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-transform flex items-center justify-center gap-2"
+                href="#"
+              >
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"
+                  ><path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.319 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884 0 2.225.569 3.946 1.694 5.602l-1.082 3.951 4.05-.1.05zm11.332-6.855c-.299-.149-1.765-.87-2.039-.97-.274-.1-.474-.149-.673.149-.199.299-.772.97-.946 1.169-.175.199-.349.224-.648.075-.299-.149-1.265-.467-2.41-1.487-.892-.795-1.493-1.777-1.668-2.076-.175-.299-.019-.461.13-.61.135-.133.299-.349.448-.523.149-.174.199-.299.299-.498.099-.199.05-.373-.025-.522-.075-.149-.673-1.62-.922-2.217-.241-.581-.484-.502-.673-.512-.174-.008-.373-.01-.573-.01-.199 0-.523.075-.797.373s-1.046 1.022-1.046 2.49c0 1.467 1.069 2.887 1.219 3.086.149.199 2.103 3.21 5.093 4.505.711.308 1.266.491 1.699.629.714.227 1.365.195 1.879.119.573-.085 1.765-.721 2.014-1.417.25-.696.25-1.293.174-1.417-.075-.124-.274-.199-.573-.348z"
+                  ></path></svg
+                >
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  </div>
+</Layout>
