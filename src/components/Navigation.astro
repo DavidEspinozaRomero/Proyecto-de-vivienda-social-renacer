@@ -1,0 +1,20 @@
+---
+import NavItem from "./NavItem.astro";
+
+interface Props {
+  listItems: Array<{ tag: string; link: string }>;
+}
+const { listItems } = Astro.props;
+---
+
+<nav class="hidden md:flex items-center gap-8">
+  <ul class="flex items-center gap-4">
+    {
+      listItems.map(({ tag, link }) => (
+        <li>
+          <NavItem tag={tag} link={link} />
+        </li>
+      ))
+    }
+  </ul>
+</nav>

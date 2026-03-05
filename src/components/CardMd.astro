@@ -1,0 +1,26 @@
+---
+import Image from "astro/components/Image.astro";
+
+import img from "./src/assets/mockImg.webp";
+// img: "./src/assets/images/renacer-ambato.jpg";
+---
+
+<div
+  class="relative w-full aspect-4/3 rounded-3xl overflow-hidden shadow-2xl bg-neutral-beige/20 group"
+  data-alt="Vista aérea de terrenos en Ambato con montañas"
+>
+  <Image
+    class="object-cover w-full h-full"
+    src={img}
+    alt="Terrenos en Ambato"
+  />
+  <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent">
+  </div>
+  <div class="absolute bottom-6 left-6 text-white">
+    <span
+      class="bg-secondary/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider"
+      >Proyecto Social</span
+    >
+    <p class="mt-2 text-xl font-bold">Sector Chaupi San Luis</p>
+  </div>
+</div>

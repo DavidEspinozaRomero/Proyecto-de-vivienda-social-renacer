@@ -1,0 +1,29 @@
+---
+import Navigation from "./Navigation.astro";
+
+const listItems = [
+  { tag: "Inicio", link: "/" },
+  { tag: "Proyecto", link: "/proyecto" },
+  { tag: "Noticias", link: "/noticias" },
+  { tag: "Requisitos", link: "/requisitos" },
+  { tag: "Contacto", link: "/contacto" },
+];
+---
+
+<header
+  class="sticky top-0 z-50 w-full px-4 py-4 flex items-center justify-between border-b border-black/30 bg-background-light/80 backdrop-blur-md
+dark:bg-background-dark/80 md:px-20 lg:px-40"
+>
+  <div class="flex items-center gap-2 text-primary">
+    <span class="material-symbols-outlined text-3xl">home_pin</span>
+    <h2 class="text-xl font-black tracking-tighter uppercase">RENACER</h2>
+  </div>
+  <Navigation listItems={listItems} />
+  <div class="flex items-center gap-4">
+    <a href="/como-ser-socio"
+      class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all shadow-md"
+    >
+      Como ser Socio
+    </a>
+  </div>
+</header>

@@ -1,0 +1,32 @@
+---
+interface Props {
+  type: "primary" | "secondary" | "dark" | "light" | "whatsapp" | "facebook";
+  link?: string;
+  rounded?: "plain" | "lg" | "full";
+}
+const { type = "primary", link, rounded = "lg" } = Astro.props;
+
+const buttonClass = {
+  primary: "bg-primary text-white hover:bg-primary/90",
+  secondary: "bg-secondary text-white hover:bg-secondary/90",
+  dark: "bg-slate-900 dark:bg-slate-700 text-white hover:bg-slate-800",
+  light: "bg-white border-2 border-primary/50 text-slate-800 hover:bg-light",
+  whatsapp: "bg-emerald-600 text-white hover:bg-emerald-700",
+  facebook: "bg-white border-2 border-primary/50 text-slate-800 hover:bg-light",
+}[type];
+
+const roundedClass = {
+  plain: "rounded-xs",
+  lg: "rounded-lg",
+  full: "rounded-2xl",
+}[rounded]
+---
+
+<a href={link}>
+  <button
+    class={buttonClass +
+      " px-8 py-4 font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2 " + roundedClass}
+  >
+    <slot />
+  </button>
+</a>
