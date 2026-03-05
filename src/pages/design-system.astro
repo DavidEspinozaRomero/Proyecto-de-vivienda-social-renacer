@@ -1,0 +1,93 @@
+---
+import "../styles/global.css";
+
+import Button from "../components/Button.astro";
+import ButtonTransparent from "../components/ButtonTransparent.astro";
+import CardMd from "../components/CardMd.astro";
+import Navigation from "../components/Navigation.astro";
+
+
+const listItems = [
+  { tag: "Inicio", link: "/" },
+  { tag: "Proyecto", link: "/proyecto" },
+  { tag: "Noticias", link: "/noticias" },
+  { tag: "Requisitos", link: "/requisitos" },
+  { tag: "Contacto", link: "/contacto" },
+];
+---
+
+<div class="p-4">
+  <h1 class="text-2xl font-bold">Design System</h1>
+  <hr />
+  <h2 class="text-xl font-bold">Colors</h2>
+  <hr />
+  <div class="grid grid-cols-2 gap-4">
+    <div class="bg-primary text-white p-4 rounded-lg">Primary</div>
+    <div class="bg-secondary text-white p-4 rounded-lg">Secondary</div>
+    <div class="bg-light text-slate-900 p-4 rounded-lg">Background Light</div>
+    <div class="bg-dark text-slate-100 p-4 rounded-lg">Background Dark</div>
+  </div>
+  <h2 class="text-xl font-bold">Typography</h2>
+  <hr />
+  <div class="grid grid-cols-2 gap-4">
+    <div class="font-display font-normal">Public Sans, sans-serif Normal</div>
+    <div class="font-display font-italic">Public Sans, sans-serif Italic</div>
+    <div class="font-display font-light">Public Sans, sans-serif Light</div>
+    <div class="font-display font-medium">Public Sans, sans-serif Medium</div>
+    <div class="font-display font-semibold">
+      Public Sans, sans-serif Semibold
+    </div>
+    <div class="font-display font-bold">Public Sans, sans-serif Bold</div>
+    <div class="font-display font-thin">Public Sans, sans-serif Thin</div>
+    <div class="font-display font-black">Public Sans, sans-serif Black</div>
+  </div>
+
+  <h2 class="text-xl font-bold">Components</h2>
+  <hr />
+  <h3 class="text-lg font-bold pb-4 mt-10">Buttons</h3>
+  <p>Botones son usados para llamar a acciones o para navegar.</p>
+  <div class="grid grid-cols-2 gap-4">
+    <Button type="primary">Primary</Button>
+    <Button type="secondary">Secondary</Button>
+    <Button type="dark">Dark</Button>
+    <Button type="light">Light</Button>
+    <div class="bg-gray-500 p-4 rounded-lg">
+      <ButtonTransparent link="/proyecto">Saber mas</ButtonTransparent>
+    </div>
+  </div>
+
+  <h3 class="text-lg font-bold pb-4 mt-10">Navigation</h3>
+  <hr />
+  <Navigation listItems={listItems} />
+
+  <h3 class="text-lg font-bold pb-4 mt-10">Header</h3>
+  <hr />
+  <header
+    class="sticky top-0 z-50 w-full px-4 py-4 flex items-center justify-between border-b border-black/30 bg-background-light/80 backdrop-blur-md
+    dark:bg-background-dark/80 md:px-20 lg:px-40"
+  >
+    <div class="flex items-center gap-2 text-primary">
+      <span class="material-symbols-outlined text-3xl">home_pin</span>
+      <h2 class="text-xl font-black tracking-tighter uppercase">RENACER</h2>
+    </div>
+    <Navigation listItems={listItems} />
+    <div class="flex items-center gap-4">
+      <button
+        class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all shadow-md"
+      >
+        Como ser Socio
+      </button>
+    </div>
+  </header>
+
+  <h3 class="text-lg font-bold pb-4 mt-10">Cards</h3>
+  <p>Small Cards</p>
+  <hr>
+  <p>Medium Cards</p>
+  <hr>
+  <div class="w-1/2">
+    <CardMd />
+  </div>
+  <p>Large Cards</p>
+  <hr>
+</div>
