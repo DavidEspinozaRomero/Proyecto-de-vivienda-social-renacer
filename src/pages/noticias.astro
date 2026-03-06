@@ -2,9 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+const title = "Noticias y avances del Proyecto Renacer | Vivienda Social Ambato";
+const description = "Conoce las últimas noticias, mingas y avances del proyecto de vivienda social Renacer en Ambato. Seguimos trabajando para construir una comunidad."
 ---
 
-<Layout>
+<Layout title={title} description={description}>
   <Header />
   <div
     class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
