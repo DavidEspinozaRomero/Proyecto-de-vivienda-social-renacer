@@ -3,9 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Button from "../components/Button.astro";
+
+const title = "El Proyecto Renacer | Vivienda Social en Ambato";
+const description = "Conoce la historia del proyecto de vivienda social Renacer en Ambato. 4 años de organización, trabajo comunitario y compromiso para ayudar a familias a obtener su primer terreno."
 ---
 
-<Layout>
+<Layout title={title} description={description}>
   <Header />
   <div class="relative flex min-h-screen flex-col overflow-x-hidden">
     <!-- Navigation -->
