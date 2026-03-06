@@ -2,11 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import Button from "../components/Button.astro";
-import ButtonTransparent from "../components/ButtonTransparent.astro";
+
+const title = "Requisitos para obtener terreno en Ambato | Proyecto Renacer";
+const description = "Consulta los requisitos para formar parte del proyecto de vivienda social Renacer en Ambato y acceder a tu primer terreno. Información clara y actualizada.";
 ---
 
-<Layout>
+<Layout title={title} description={description}>
   <!-- Navigation -->
   <Header />
   <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
