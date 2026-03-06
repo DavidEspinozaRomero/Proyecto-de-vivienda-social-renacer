@@ -1,15 +1,30 @@
 ---
 import "../styles/global.css";
+import Head from "../components/Head.astro";
+import OpenGraph from "../components/OpenGraph.astro";
+
+const { title, description, image, OGTitle, OGDescription, OGImage } =
+	Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
+		<!-- meta -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
 
+		<!-- title -->
+		<title>{title}</title>
+		<!-- preconect -->
+		<!-- scripts async-->
+		<script
+			src="https://analytics.ahrefs.com/analytics.js"
+			data-key="sASfd12IOBxOqgA/S0QsDQ"
+			async></script>
+		<!-- CSS includes @imports -->
+		<!-- scripts syncronous-->
+		<!-- scripts CSS-->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
@@ -22,11 +37,28 @@ import "../styles/global.css";
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
 			rel="stylesheet"
 		/>
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<!-- preload-->
+		<!-- scripts defer-->
+		<!-- prefetch / prerender-->
+
+		<meta name="description" content={description} />
+
+		<!-- robots -->
+		<meta name="robots" content="index,follow" />
+		<!-- Evrything else (SEO, meta tags, icons, OpenGraph, etc) -->
+		<Head />
+		
+		<OpenGraph
+			OGTitle={OGTitle ?? title}
+			,
+			OGDescription={OGDescription ?? description}
+			,
+			OGImage={OGImage ?? image}
+		/>
 	</head>
-	<body class="bg-light font-display text-slate-900">
-		<!-- dark:text-slate-100 dark:bg-background-dark  -->
+	<body
+		class="bg-light font-display text-slate-900 dark:text-slate-100 dark:bg-dark"
+	>
 		<slot />
 	</body>
 </html>
