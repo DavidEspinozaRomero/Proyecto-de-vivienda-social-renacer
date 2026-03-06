@@ -5,9 +5,12 @@ import CardMd from "../components/CardMd.astro";
 import Button from "../components/Button.astro";
 import CardSm from "../components/CardSm.astro";
 import Footer from "../components/Footer.astro";
+
+const title = "Proyecto de Vivienda Social Renacer | Terrenos en Ambato";
+const description = "Proyecto de vivienda social Renacer en Ambato. Una oportunidad para personas que no tienen vivienda propia y desean obtener su primer terreno. Conoce requisitos y cómo ser socio."
 ---
 
-<Layout>
+<Layout title={title} description={description}>
   <Header />
   <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
     <main class="flex-1">
