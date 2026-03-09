@@ -2,7 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { socios } from "../data/state";
 
+const porcentage = socios.porcentaje();
 const title = "Noticias y avances del Proyecto Renacer | Vivienda Social Ambato";
 const description = "Conoce las últimas noticias, mingas y avances del proyecto de vivienda social Renacer en Ambato. Seguimos trabajando para construir una comunidad."
 ---
@@ -179,16 +181,16 @@ const description = "Conoce las últimas noticias, mingas y avances del proyecto
             >
               <div class="flex items-center justify-between mb-4">
                 <span class="text-lg font-semibold">Meta: 64 Socios</span>
-                <span class="text-primary font-bold">85% Completado</span>
+                <span class="text-primary font-bold">{porcentage}% Completado</span>
               </div>
               <div class="w-full bg-arena/30 rounded-full h-4 mb-6">
-                <div class="bg-primary h-4 rounded-full" style="width: 85%">
+                <div class="bg-primary h-4 rounded-full" style=`width: ${porcentage}%`>
                 </div>
               </div>
               <p
                 class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4"
               >
-                Estamos a solo 10 cupos de completar el grupo oficial de 64
+                Estamos a solo {socios.maximo - socios.actual} cupos de completar el grupo oficial de 64
                 socios para iniciar la fase 1 de urbanización. ¡Tu participación
                 es clave!
               </p>
